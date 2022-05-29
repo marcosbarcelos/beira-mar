@@ -4,9 +4,58 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Beira Mar - Pousada</title>
+ 
 </head>
 <body>
-  
+  <header class="header">
+    <a href="#"><img src="assets/img/logo.png" class="headerlogo" alt=""></a>
+    <nav class="headernav">
+      <ul class="navlist">
+        <li class="listitem"><a href="home.html" class="list__link">Home</a></li>
+        <li class="listitem"><a href="estrutura.html" class="list__link">Estrutura</a></li>
+        <li class="listitem"><a href="consultas.html" class="list__link">Consultas e Reservas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+  <section class="estrutura">
+    <div class="text">
+      <h1>ESTRUTURA</h1>
+    <p class="text_p">Nossa estrutura é repleta de elementos que trazem sossego, paz e todo esse clima de férias, temos áreas de convivência, um restaurante com uma comida deliciosa, a área da piscina, quadra e tudo de melhor para nossos hospedes </p>
+     
+    <p class="text_pi">(imagens genéricas, não representam o projeto real)</p>
+    </div>
+
+    <div class="img">
+     <img src="assets/img/piscina.jpg" alt="" class="img_piscina">
+        <div class="img_background">
+          <canvas id="background" width="200" height="100"></canvas>
+          <p id="et">ÁREA DE LAZER</p>
+        </div>
+
+      <img src="assets/img/sinuca.jpg" alt="" class="img_sinuca">
+      <div class="img_background">
+        <canvas id="background" width="200" height="100"></canvas>
+        <p id="et">ÁREA DE CONVIVÊNCIA</p>
+      </div>
+
+      <img src="assets/img/jardim.jpg" alt="" class="img_jardim">
+      <div class="img_background">
+        <canvas id="background" width="200" height="100"></canvas>
+        <p id="et">ÁREA DE REPOUSO</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; Beira Mar, Desenvolvido por Praxis - Empresa JR. | Todos os direitos reservados.</p>
+  </footer>
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>

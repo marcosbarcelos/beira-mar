@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;600;700;800&family=Montserrat:wght@100;300;400;600;700&display=swap');
+
+:root {
+  --font-main: 15.4rem 'Abhaya Libre', serif;
+  --font-desc-title: 3rem;
+  --font-desc-paragraph: 2.2rem;
+  --font-link: 1.6rem;
+  --main-color: #144a23;
+  --secondary-color: #f5f5f5;
+  --third-white: #FFFF;
+  --third-black: #000;
+  --btn: 2rem 4rem;
+  --radius: 0.5rem;
+  --gap: 2rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* classes de pré-definição */
+.section--title {
+  color: var(--main-color);
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: var(--font-desc-title);
+}
+
+.desc--title {
+  font-size: var(--font-desc-title);
+}
+
+.desc--paragraph {
+  font-size: var(--font-desc-paragraph);
+  font-weight: 500;
+}
+
+.desc--btn {
+  background-color: var(--main-color);
+  font-size: var(--font-link);
+  color: var(--third-white);
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+}
+
+/* início da estilização */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rem;
+  height: 10vh;
+  background-color: var(--main-color);
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.list__link {
+  font-size: var(--font-link);
+  color: var(--third-white);
+}
+
+.section__home {
+  height: 60vh;
+}
+
+.section__consult {
+  text-align: center;
+  height: 50vh;
+  width: 100%;
+}
+
+.consult__header {
+  padding: 10rem 0;
+}
+
+.consult__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content__info {
+  font-size: var(--font-desc-paragraph);
+}
+
+.info__icon {
+  font-size: 3rem;
+}
+
+.info__title {
+  font-weight: bold;
+  color: var(--main-color);
+  text-transform: uppercase;
+  padding: 1rem 0 2rem;
+}
+
+.section__contact {
+  background-color: var(--secondary-color);
+  height: 100vh;
+  position: relative;
+}
+
+.contact__content {
+  display: flex;
+  justify-content: center;
+  gap: 15rem;
+  padding-top: 8rem;
+}
+
+.contact__banner {
+  margin-top: 5rem;
+}
+
+.banner__title {
+  font-size: 3.2rem;
+  padding-bottom: 5rem;
+}
+
+.contact__form {
+  margin-top: 5rem;
+}
+
+.form__input {
+  box-shadow: 0px 4px 35px rgba(235, 235, 235, 0.25);
+  border-radius: 9px;
+  border: none;
+  font-family: var(--font--desc);
+}
+
+.form__input::placeholder {
+  padding-left: 2rem;
+  font-weight: 500;
+  font-style: italic;
+  color: #D4D4D4;
+}
+
+.form__input.--top {
+  width: 25.3rem;
+  height: 5.9rem;
+}
+
+.form__input.--top:nth-child(1) {
+  margin-right: 6rem;
+}
+
+.form__middle {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0;
+}
+
+.form__input.--middle {
+  width: 57rem;
+  height: 5.9rem;
+}
+
+.form__input.--middle {
+  margin-bottom: 5rem;
+}
+
+.form__textarea {
+  width: 57rem;
+  height: 23rem;
+}
+
+.form__textarea::placeholder {
+  padding-top: 2rem;
+}
+
+.form__button {
+  cursor: pointer;
+  padding: var(--btn);
+  background-color: var(--main-color);
+  border-radius: var(--radius);
+  color: var(--third-white);
+  font-size: var(--font-link);
+  border: none;
+  text-transform: uppercase;
+}
+
+.contact__wave {
+  overflow: hidden;
+}
+
+.wave__svg {
+  position: absolute;
+  bottom:0;
+  left: 0;
+  right: 0;
+}
+
+.wave__path {
+  animation: moveWave1 4s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave1 {
+  from {
+    transform: translateX(0);
+  } to {
+    transform: translateX(-100px);
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--third-white);
+  font-weight: bold;
+  background-color: var(--main-color);
+  height: 5vh;
+}
+

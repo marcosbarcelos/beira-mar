@@ -5,7 +5,7 @@
     Beira Mar - Pousada
 </h1>
 <p align="center">
-    Projeto Final <a href="https://marcosbarcelos.github.io/Portfolio/" target="_blank">Pousada Beira Mar</a> desenvolvido com HTML, CSS e JS.
+    Projeto Final <a href="https://beira-mar.vercel.app/" target="_blank">Pousada Beira Mar</a> desenvolvido com HTML, CSS e JS.
 </p>
 
 <img src="assets/design/telas.png">

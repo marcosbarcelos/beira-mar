@@ -10,7 +10,7 @@ function loading() {
   setInterval(() => {
     loadingContainer.classList.add('hidden');
     content.classList.remove('hidden')
-  }, 3500);
+  }, 4000);
 }
 window.addEventListener('load', loading);
 

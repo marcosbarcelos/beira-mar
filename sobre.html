@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Praxis Empresa JR" />
+  <meta name="description" content="Conheça a Pousada Beira Mar, localizada na região da Orla de Armação em Salvador - BA."/>
+  <meta name="keywords" content="Pousada, Hotel, Praia, Reservas"/>
+  <!-- icon da barra de navegação do google -->
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
+  <!-- css principal -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- css da página de consulta para reutilização do código da animação de onda -->
+  <link rel="stylesheet" href="assets/css/consulta.css">
+  <!-- css da página -->
+  <link rel="stylesheet" href="assets/css/sobre.css">
+  <title>Beira Mar - Sobre</title>
+</head>
+<body>
+  <header class="header">
+    <a href="index.html"><img src="assets/img/logo.png" class="header__logo" alt="Logo contendo um coqueiro e o nome da pousada beira mar ao lado"/></a>
+    <nav class="header__nav">
+      <div class="nav__mobile" id="btnMobile">
+        <div class="mobile__line"></div>
+        <div class="mobile__line"></div>
+        <div class="mobile__line"></div>
+      </div>
+      <ul class="nav__list hidden" id="container">
+        <li class="list__item">
+          <a href="index.html" class="list__link">Home</a>
+        </li>
+        <li class="list__item">
+          <a href="estrutura.html" class="list__link">Estrutura</a>
+        </li>
+        <li class="list__item">
+          <a href="consulta.html" class="list__link">Consultas e Reservas</a>
+        </li>
+        <li class="list__item">
+          <a href="#" class="list__link">Sobre Nós</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="main">
+    <section class="main__home"></section>
+    <section class="section__consult" id="consultas">
+      <div class="consult__header">
+        <h2 class="consult__title section--title">Consultas e Reservas</h2>
+      </div>
+      <div class="consult__content">
+        <div class="content__info">
+          <i class="fa-regular fa-map info__icon"></i>
+          <p class="info__title">Localização</p>
+          <p class="info__desc">Armação – Octavio Mangabeira, 3989</p>
+        </div>
+        <div class="content__info">
+          <i class="fa-regular fa-id-badge info__icon"></i>
+          <p class="info__title">Ligue para nós</p>
+          <p class="info__desc">+5571999999999</p>
+        </div>
+        <div class="content__info">
+          <i class="fa-regular fa-envelope info__icon"></i>
+          <p class="info__title">Envie-nos um email</p>
+          <p class="info__desc">pousadabeiramar@gmail.com</p>
+        </div>
+      </div>
+    </section>
+    <section class="section__about">
+      <div class="about__history">
+        <h2 class="about__title section--title">História</h2>
+        <p class="about__desc --1">
+          Somos uma pequena pousada de 4.000 metros quadrados com 200 metros de praia e um paraíso privativo, beira mar, pé na areia. <br><br> O Beira Mar é ideal para seu descanso, temos o charme da natureza aliado com a paz da paisagem, que vai te proporcionar momentos inesquecíveis. <br><br>Nossa infraestrutura é simples e muito aconchegante, com quartos suítes, piscina, salao de jogos, churrasqueira, quadra de areia poliesportiva e playground. Além do banho de mar, piscina, você também pode desfrutar das águas doce se optar realizar um passeio disponível em Salvador. Os apartamentos são sob medida para você, alguns com vista para o mar.
+        </p>
+      </div>
+      <div class="about__mission">
+        <h2 class="about__title section--title">Missão e Valores</h2>
+        <p class="about__desc">
+          Aqui na Beira Mar pousada agimos de modo a criar uma segunda casa para todos aqueles viajantesque desejam desfrutar 
+          o melhor que Salvador tem a oferecer de forma elegante e relaxante. <br><br> Aqui estão alguns valores de nossa pousada:
+        </p>
+        <div class="mission">
+          <ul class="mission__list">
+              <li><i class="fas fa-caret-right"></i>Foco no Cliente</li>
+              <li><i class="fas fa-caret-right"></i>Espirito de Equipe</li>
+              <li><i class="fas fa-caret-right"></i>Acessibilidade</li>
+              <li><i class="fas fa-caret-right"></i>Sustentabilidade</li>
+              <li><i class="fas fa-caret-right"></i>Inovação</li>
+              <li><i class="fas fa-caret-right"></i>Profissionalismo</li>
+          </ul>
+      </div>
+      </div>
+    </section>
+    <section class="section__wave">
+      <svg
+        id="wave"
+        class="wave__svg"
+        style="transform: rotate(0deg); transition: 0.3s"
+        viewBox="0 0 1200 140"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+            <stop stop-color="rgba(20, 74, 35, 1)" offset="0%"></stop>
+            <stop stop-color="rgba(20, 74, 35, 1)" offset="100%"></stop>
+          </linearGradient>
+        </defs>
+        <path
+          class="wave__path"
+          style="transform: translate(0, 0px); opacity: 1"
+          fill="url(#sw-gradient-0)"
+          d="M0,44L30,66C60,88,120,132,180,132C240,132,300,88,360,66C420,44,480,44,540,58.7C600,73,660,103,720,121C780,139,840,147,900,146.7C960,147,1020,139,1080,132C1140,125,1200,117,1260,102.7C1320,88,1380,66,1440,66C1500,66,1560,88,1620,113.7C1680,139,1740,169,1800,161.3C1860,154,1920,110,1980,102.7C2040,95,2100,125,2160,146.7C2220,169,2280,183,2340,157.7C2400,132,2460,66,2520,62.3C2580,59,2640,117,2700,143C2760,169,2820,161,2880,157.7C2940,154,3000,154,3060,161.3C3120,169,3180,183,3240,190.7C3300,198,3360,198,3420,187C3480,176,3540,154,3600,150.3C3660,147,3720,161,3780,161.3C3840,161,3900,147,3960,143C4020,139,4080,147,4140,143C4200,139,4260,125,4290,117.3L4320,110L4320,220L4290,220C4260,220,4200,220,4140,220C4080,220,4020,220,3960,220C3900,220,3840,220,3780,220C3720,220,3660,220,3600,220C3540,220,3480,220,3420,220C3360,220,3300,220,3240,220C3180,220,3120,220,3060,220C3000,220,2940,220,2880,220C2820,220,2760,220,2700,220C2640,220,2580,220,2520,220C2460,220,2400,220,2340,220C2280,220,2220,220,2160,220C2100,220,2040,220,1980,220C1920,220,1860,220,1800,220C1740,220,1680,220,1620,220C1560,220,1500,220,1440,220C1380,220,1320,220,1260,220C1200,220,1140,220,1080,220C1020,220,960,220,900,220C840,220,780,220,720,220C660,220,600,220,540,220C480,220,420,220,360,220C300,220,240,220,180,220C120,220,60,220,30,220L0,220Z"
+        ></path>
+      </svg>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <p class="footer__copyright">&copy; Beira Mar, Desenvolvido por Praxis Empresa JR. | Todos os direitos reservados.</p>
+  </footer>
+  <!-- script principal -->
+  <script src="assets/js/script.js"></script>
+  <!-- script da biblioteca fontawesome -->
+  <script src="https://kit.fontawesome.com/c114d0ac34.js" crossorigin="anonymous"></script>
+</body>
+</html>

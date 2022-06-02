@@ -7,173 +7,193 @@
   <meta name="author" content="Praxis Empresa JR" />
   <meta name="description" content="Conheça a Pousada Beira Mar, localizada na região da Orla de Armação em Salvador - BA."/>
   <meta name="keywords" content="Pousada, Hotel, Praia, Reservas"/>
+  <!-- icon da barra de navegação do google -->
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
+  <!-- css principal -->
   <link rel="stylesheet" href="assets/css/style.css">
-  <title>Beira Mar - Home</title>
+  <title>Beira Mar - Pousada</title>
 </head>
 <body>
-  <header class="header">
-    <a href="#home"><img src="assets/img/logo.png" class="header__logo" alt="Logo contendo um coqueiro e o nome da pousada beira mar ao lado"/></a>
-    <nav class="header__nav">
-      <div class="nav__mobile" id="btnMobile">
-        <div class="mobile__line"></div>
-        <div class="mobile__line"></div>
-        <div class="mobile__line"></div>
-      </div>
-      <ul class="nav__list hidden" id="container">
-        <li class="list__item">
-          <a href="#home" class="list__link">Home</a>
-        </li>
-        <li class="list__item">
-          <a href="estrutura.html" class="list__link">Estrutura</a>
-        </li>
-        <li class="list__item">
-          <a href="consulta.html" class="list__link">Consultas e Reservas</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section class="section__home" id="home">
-      <div class="home__intro">
-        <h1 class="intro__title main--title">Beira Mar</h1>
-        <p class="intro__desc desc--paragraph">Reserve a sua estadia e desfrute a beleza da<br/>vida com os melhores preços.</p>
-        <a href="consulta.html" class="intro__button desc--btn btn" role="button">Reservar</a>
-      </div>
-    </section>
-    <section class="section__about" id="sobre">
-      <div class="about__banner">
-        <img src="assets/img/bannerG.jpg" class="about__banner--large" loading="lazy" alt="imagem representativa contendo fitas do senhor do bonfim. amarradas na grade"/>
-        <img src="assets/img/bannerP.jpg" class="about__banner--small" loading="lazy" alt="imagem representativa de casas colorida no pelourinho"/>
-      </div>
-      <div class="about__desc">
-        <h2 class="about__desc--title desc--title">Bem vindo à nossa<br/>pousada</h2>
-        <p class="about__desc--paragraph desc--paragraph">
-          A Beira Mar Pousada está localizada nas proximidades da Praia de
-          Armação, um dos trechos mais belos e representativos do litoral
-          baiano. Além do mais, se destaca pela curta distância do grande
-          ponto turístico da cidade - O Pelourinho.
-        </p>
-        <a href="estrutura.html" class="about__desc--button btn link" role="button" title="Conheça nossa estrutura.">Saiba Mais</a>
-      </div>
-    </section>
-    <section class="section__consult" id="consultas">
-      <div class="consult__header">
-        <h2 class="consult__title section--title">Consultas e Reservas</h2>
-      </div>
-      <div class="consult__content">
-        <div class="content__info">
-          <i class="fa-regular fa-map info__icon"></i>
-          <p class="info__title">Localização</p>
-          <p class="info__desc">Armação – Octavio Mangabeira, 3989</p>
+  <div class="loading" id="loading">
+    <img src="assets/img/loading.gif" alt="" height="250px">
+    <p class="loading__title">Carregando...</p>
+  </div>
+  <div class="content hidden" id="content">
+    <header class="header">
+      <a href="#home"><img src="assets/img/logo.png" class="header__logo" alt="Logo contendo um coqueiro e o nome da pousada beira mar ao lado"/></a>
+      <nav class="header__nav">
+        <div class="nav__mobile" id="btnMobile">
+          <div class="mobile__line"></div>
+          <div class="mobile__line"></div>
+          <div class="mobile__line"></div>
         </div>
-        <div class="content__info">
-          <i class="fa-regular fa-id-badge info__icon"></i>
-          <p class="info__title">Ligue para nós</p>
-          <p class="info__desc">+5571999999999</p>
+        <ul class="nav__list hidden" id="container">
+          <li class="list__item">
+            <a href="#home" class="list__link">Home</a>
+          </li>
+          <li class="list__item">
+            <a href="estrutura.html" class="list__link">Estrutura</a>
+          </li>
+          <li class="list__item">
+            <a href="consulta.html" class="list__link">Consultas e Reservas</a>
+          </li>
+          <li class="list__item">
+            <a href="sobre.html" class="list__link">Sobre Nós</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  
+    <main class="main">
+      <section class="section__home" id="home">
+        <div class="home__intro">
+          <h1 class="intro__title main--title">Beira Mar</h1>
+          <p class="intro__desc desc--paragraph">Reserve a sua estadia e desfrute a beleza da<br/>vida com os melhores preços.</p>
+          <a href="consulta.html" class="intro__button btn" role="button">Reservar</a>
         </div>
-        <div class="content__info">
-          <i class="fa-regular fa-envelope info__icon"></i>
-          <p class="info__title">Envie-nos um email</p>
-          <p class="info__desc">pousadabeiramar@gmail.com</p>
+      </section>
+      <section class="section__about" id="sobre">
+        <div class="about__banner">
+          <img src="assets/img/bannerG.jpg" class="about__banner--large" loading="lazy" alt="imagem representativa contendo fitas do senhor do bonfim. amarradas na grade"/>
+          <img src="assets/img/bannerP.jpg" class="about__banner--small" loading="lazy" alt="imagem representativa de casas colorida no pelourinho"/>
         </div>
-      </div>
-    </section>
-    <section class="section__experience">
-      <div class="experience__desc">
-        <h2 class="experience__desc--title desc--title">Experiências em<br/>Salvador, Bahia</h2>
-        <p class="experience__desc--paragraph desc--paragraph">
-          Nossa pousada se econtra em ótima localização, permitindo aos
-          hóspedes a possibilidade de viver as mais diversas experiências de
-          Salvador - BA. Em nossa proximidade, contamos com A Praia da
-          Armação, ideal para quem já gosta de um banho de mar. Não tão
-          distante, indicamos a todos visitar o Elevador Lacerda, uma
-          estrutura que compõe grande parte da história de salvador.
-          <br/><br/>
-          O ponto mais badalado é o famoso Pelourinho, bairro localizado no
-          centro histórico de Salvador, uma ótima opção para aqueles que
-          gostam de conhecer novas culturas. Com sua arquitetura magnífica e
-          com a vivacidade que existe no bairro, é impossível não se encantar!
-        </p>
-        <a href="https://www.tripadvisor.com.br/Attractions-g303272-Activities-Salvador_State_of_Bahia.html" class="experience__desc--button btn" title="Descubra locais em Salvador." target="_blank" role="button">Leia Mais</a>
-      </div>
-      <div class="experience__slide">
-        <img class="slide__image selected" src="assets/img/modelo.jpg" loading="lazy" alt="foto que representa o cliente"/>
-        <img class="slide__image" src="assets/img/centro.jpg" loading="lazy" alt="foto que representa o cliente"/>
-        <img class="slide__image" src="assets/img/lacerda.jpg" loading="lazy" alt="foto que representa o cliente"/>
-      </div>
-    </section>
-    <section class="section__review">
-      <div class="review__header">
-        <h2 class="review__title section--title">O que nossos clientes falam</h2>        
-      </div>
-      <div class="review__testimonial">
-        <div class="testimonial__inner">
-          <div class="testimonial__row">
-            <div class="testimonial__col">
-              <div class="col__card">
-                <img src="assets/img/p2.png" loading="lazy" alt="">
-                <div class="card__name">Andreia Silva</div>
-                <div class="card__stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+        <div class="about__desc">
+          <h2 class="about__desc--title desc--title">Bem vindo à nossa<br/>pousada</h2>
+          <p class="about__desc--paragraph desc--paragraph">
+            A Beira Mar Pousada está localizada nas proximidades da Praia de
+            Armação, um dos trechos mais belos e representativos do litoral
+            baiano. Além do mais, se destaca pela curta distância do grande
+            ponto turístico da cidade - O Pelourinho.
+          </p>
+          <a href="sobre.html" class="about__desc--button btn" role="button" title="Conheça nossa história e valores.">Sobre Nós</a>
+        </div>
+      </section>
+      <section class="section__consult" id="consultas">
+        <div class="consult__header">
+          <h2 class="consult__title section--title">Consultas e Reservas</h2>
+        </div>
+        <div class="consult__content">
+          <div class="content__info">
+            <i class="fa-regular fa-map info__icon"></i>
+            <p class="info__title">Localização</p>
+            <p class="info__desc">Armação – Octavio Mangabeira, 3989</p>
+          </div>
+          <div class="content__info">
+            <i class="fa-regular fa-id-badge info__icon"></i>
+            <p class="info__title">Ligue para nós</p>
+            <p class="info__desc">+5571999999999</p>
+          </div>
+          <div class="content__info">
+            <i class="fa-regular fa-envelope info__icon"></i>
+            <p class="info__title">Envie-nos um email</p>
+            <p class="info__desc">pousadabeiramar@gmail.com</p>
+          </div>
+        </div>
+      </section>
+      <section class="section__experience">
+        <div class="experience__desc">
+          <h2 class="experience__desc--title desc--title">Experiências em<br/>Salvador, Bahia</h2>
+          <p class="experience__desc--paragraph desc--paragraph">
+            Nossa pousada se econtra em ótima localização, permitindo aos
+            hóspedes a possibilidade de viver as mais diversas experiências de
+            Salvador - BA. Em nossa proximidade, contamos com A Praia da
+            Armação, ideal para quem já gosta de um banho de mar. Não tão
+            distante, indicamos a todos visitar o Elevador Lacerda, uma
+            estrutura que compõe grande parte da história de salvador.
+            <br/><br/>
+            O ponto mais badalado é o famoso Pelourinho, bairro localizado no
+            centro histórico de Salvador, uma ótima opção para aqueles que
+            gostam de conhecer novas culturas. Com sua arquitetura magnífica e
+            com a vivacidade que existe no bairro, é impossível não se encantar!
+          </p>
+          <a 
+          href="https://www.tripadvisor.com.br/Attractions-g303272-Activities-Salvador_State_of_Bahia.html" 
+          class="experience__desc--button btn" 
+          title="Descubra locais em Salvador." 
+          target="_blank" 
+          role="button">
+          Leia Mais
+          </a>
+        </div>
+        <div class="experience__slide">
+          <img class="slide__image selected" src="assets/img/modelo.jpg" loading="lazy" alt="foto do mercado modelo em salvador."/>
+          <img class="slide__image" src="assets/img/centro.jpg" loading="lazy" alt="foto do centro de salvador."/>
+          <img class="slide__image" src="assets/img/lacerda.jpg" loading="lazy" alt="foto do elevador lacerda em salvador."/>
+        </div>
+      </section>
+      <section class="section__review">
+        <div class="review__header">
+          <h2 class="review__title section--title">O que nossos clientes falam</h2>        
+        </div>
+        <div class="review__testimonial">
+          <div class="testimonial__inner">
+            <div class="testimonial__row">
+              <div class="testimonial__col">
+                <div class="col__card">
+                  <img src="assets/img/p2.png" loading="lazy" alt="">
+                  <div class="card__name">Andreia Silva</div>
+                  <div class="card__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <p>Melhor pousada que já estive na minha vida! Atendimento excelente, ótima estrutura, consegui passar minhas férias dos sonhos em Salvador!</p>
                 </div>
-                <p>Melhor pousada que já estive na minha vida! Atendimento excelente, ótima estrutura, consegui passar minhas férias dos sonhos em Salvador!</p>
               </div>
-            </div>
-            <div class="testimonial__col">
-              <div class="col__card">
-                <img src="assets/img/p1.png" loading="lazy" alt="">
-                <div class="card__name">Carlos Henrique</div>
-                <div class="card__stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
+              <div class="testimonial__col">
+                <div class="col__card">
+                  <img src="assets/img/p1.png" loading="lazy" alt="">
+                  <div class="card__name">Carlos Henrique</div>
+                  <div class="card__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <p>Show! A pousada é muito aconchegante e acolhedora, simplesmente uma experiência incrível conhecer Salvador!</p>
                 </div>
-                <p>Show! A pousada é muito aconchegante e acolhedora, simplesmente uma experiência incrível conhecer Salvador!</p>
               </div>
-            </div>
-            <div class="testimonial__col">
-              <div class="col__card">
-                <img src="assets/img/p3.png" loading="lazy" alt="">
-                <div class="card__name">Livía Maria</div>
-                <div class="card__stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
+              <div class="testimonial__col">
+                <div class="col__card">
+                  <img src="assets/img/p3.png" loading="lazy" alt="">
+                  <div class="card__name">Livía Maria</div>
+                  <div class="card__stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <p>
+                    Salvador meu amor na raiz! Já conheço a pousada Beira Mar, sou cliente fiel, pois é perfeita. Sobre os passeios em Salvador, uma maravilha, venho sempre passar minhas férias nessa cidade.
+                  </p>
                 </div>
-                <p>
-                  Salvador meu amor na raiz! Já conheço a pousada Beira Mar, sou cliente fiel, pois é perfeita. Sobre os passeios em Salvador, uma maravilha, venho sempre passar minhas férias nessa cidade.
-                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="section__map">
-      <iframe
-        class="map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.6780279225036!2d-38.44151648448383!3d-12.992433463749926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161ba16ae3237b%3A0xc626e01bcf33c0f8!2sAv.%20Oct%C3%A1vio%20Mangabeira%2C%203989%20-%20Arma%C3%A7%C3%A3o%2C%20Salvador%20-%20BA%2C%2041750-240!5e0!3m2!1spt-BR!2sbr!4v1653791556884!5m2!1spt-BR!2sbr"
-        width="100%"
-        height="600"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </section>
-  </main>
-  <footer class="footer">
-    <p class="footer__copyright">&copy; Beira Mar, Desenvolvido por Praxis - Empresa JR. | Todos osdireitos reservados.</p>
-  </footer>
+      </section>
+      <section class="section__map">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.6780279225036!2d-38.44151648448383!3d-12.992433463749926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161ba16ae3237b%3A0xc626e01bcf33c0f8!2sAv.%20Oct%C3%A1vio%20Mangabeira%2C%203989%20-%20Arma%C3%A7%C3%A3o%2C%20Salvador%20-%20BA%2C%2041750-240!5e0!3m2!1spt-BR!2sbr!4v1653791556884!5m2!1spt-BR!2sbr"
+          width="100%"
+          height="600"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+  
+    <footer class="footer">
+      <p class="footer__copyright">&copy; Beira Mar, Desenvolvido por Praxis Empresa JR. | Todos os direitos reservados.</p>
+    </footer>
+  </div>
     <!-- script principal -->
     <script src="assets/js/script.js"></script>
     <!-- script da biblioteca fontawesome -->

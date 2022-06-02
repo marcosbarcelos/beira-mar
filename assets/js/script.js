@@ -3,6 +3,16 @@ const images = document.getElementsByClassName('slide__image');
 const max = images.length;
 let currentImageIndex = 0;
 const btnMobile = document.getElementById('btnMobile');
+const loadingContainer = document.getElementById('loading');
+const content = document.getElementById('content')
+
+function loading() {
+  setInterval(() => {
+    loadingContainer.classList.add('hidden');
+    content.classList.remove('hidden')
+  }, time);
+}
+window.addEventListener('load', loading);
 
 function menuMobile() {
   const container = document.getElementById('container');
@@ -15,20 +25,16 @@ function menuMobile() {
 }
 btnMobile.addEventListener('click', menuMobile);
 
-function nextImage() {
-  images[currentImageIndex].classList.remove('selected');
-  currentImageIndex++;
-
-  if (currentImageIndex >= max) {
-    currentImageIndex = 0;
-  }
-  images[currentImageIndex].classList.add('selected');
-}
-
 function startSlide() {
+  //troca de imagem ao decorrer do tempo definido (time)
   setInterval(() => {
-    //troca de imagem ao decorrer do tempo definido (time)
-    nextImage();
+    images[currentImageIndex].classList.remove('selected');
+    currentImageIndex++;
+
+    if (currentImageIndex >= max) {
+      currentImageIndex = 0;
+    }
+    images[currentImageIndex].classList.add('selected');
   }, time);
 }
 window.addEventListener('load', startSlide);

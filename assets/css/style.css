@@ -7,6 +7,7 @@
   --secondary-color: #f5f5f5;
   --third-white: #ffff;
   --third-black: #000;
+  --hover: #24630c;
   --radius: 0.5rem;
 }
 
@@ -30,6 +31,7 @@ body {
 /* classes de predefinição (evita repetir código) */
 .section--title {
   font-size: 1.6rem;
+  color: var(--main-color);
 }
 
 .desc--paragraph {
@@ -41,15 +43,36 @@ body {
   font-size: 1.2rem;
   display: inline-block;
   transition: all 0.5s;
+  background-color: var(--main-color);
+  border-radius: var(--radius);
+  color: var(--third-white);
+  text-transform: uppercase;
 }
 
 .btn:hover {
-  background-color: #24630c;
+  background-color: var(--hover);
+}
+
+/* página de carregamento */
+.loading {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  text-align: center;
+
+}
+.loading__title {
+  font-size: 1.4rem;
+  color: var(--secondary-color);
 }
 
 /* class de script */
 .hidden {
   display: none;
+  transition: all 4s;
 }
 
 /* início da estilização */
@@ -66,7 +89,7 @@ body {
 }
 
 .header__logo {
-  width: 15rem;
+  width: 13rem;
 }
 
 .header__nav {
@@ -93,6 +116,7 @@ body {
   text-align: center;
   background: var(--main-color);
   transition: display 3s;
+  z-index: 1000;
 }
 
 .list__item {
@@ -102,6 +126,10 @@ body {
 .list__link {
   font-size: 2rem;
   color: var(--third-white);
+}
+
+.list__link:hover {
+  color: var(--hover);
 }
 
 .section__home {
@@ -349,7 +377,7 @@ body {
 }
 
 .footer__copyright {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 0.7rem;
 }
 
@@ -376,7 +404,7 @@ body {
 }
 
 /* correção bug menu mobile em dispositivos especiais */
-@media (max-width:376.98px) {
+@media (max-width: 376.98px) {
   .nav__list {
     top: 6.7rem;
   }
@@ -500,6 +528,9 @@ body {
   .experience__slide {
     height: 40rem;
   }
+  .footer__copyright {
+    font-size: 1rem;
+  }
 }
 
 /* notebook pequenos */
@@ -533,10 +564,23 @@ body {
 
   .list__item {
     margin: 0;
+    background: linear-gradient(var(--third-white), var(--secondary-color))
+      center bottom;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition: all 0.45s;
+  }
+
+  .list__item:hover {
+    background-size: 100% 2px;
   }
 
   .list__link {
     font-size: 1.6rem;
+  }
+
+  .list__link:hover {
+    color: var(--third-white);
   }
 
   .section__home {
@@ -599,6 +643,9 @@ body {
 
   .map {
     height: 35rem;
+  }
+  .footer__copyright {
+    font-size: 1.2rem;
   }
 }
 
